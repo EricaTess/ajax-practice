@@ -28,9 +28,7 @@ $('#weather-form').on('submit', (evt) => {
 
   $.get('/weather', formData, (response) => {
     // Fill in the callback function
-    console.log(response);
     $(`#weather-info`).html(`Forcast: ${response.forecast} Temp: ${response.temp}`);
-
   });
 
   // $.post('/replaceMe', formData, (response) => {
